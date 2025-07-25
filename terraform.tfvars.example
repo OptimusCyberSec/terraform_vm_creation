@@ -1,0 +1,44 @@
+# Terraform Variables Example File
+# Copy this file to 'terraform.tfvars' and customize the values
+
+# Resource Group Settings
+resource_group_name = "rg-terraform-exercise"
+location           = "West Europe"
+
+# Virtual Machine Settings
+vm_name        = "vm-terraform-demo"
+admin_username = "azureuser"
+
+# Optional: VM Size (uncomment to change from default)
+# vm_size = "Standard_B2s"
+
+# Optional: Data Disk Size (uncomment to change from default 100 GB)
+# data_disk_size_gb = 100
+
+# Optional: Environment Tag (uncomment to change from default)
+# environment = "Development"
+
+# Optional: Project Name (uncomment to change from default)
+# project_name = "Terraform-Exercise"
+
+# ===================================
+# Common Azure Regions:
+# ===================================
+# East US, East US 2, West US, West US 2, West US 3
+# Central US, North Central US, South Central US
+# Canada Central, Canada East
+# North Europe, West Europe
+# UK South, UK West
+# Australia East, Australia Southeast
+# Southeast Asia, East Asia
+# Japan East, Japan West
+
+# ===================================
+# VM Sizes with 2+ vCPUs:
+# ===================================
+# Standard_B2s    - 2 vCPUs, 4 GB RAM  (Burstable)
+# Standard_B2ms   - 2 vCPUs, 8 GB RAM  (Burstable)
+# Standard_B4ms   - 4 vCPUs, 16 GB RAM (Burstable)
+# Standard_D2s_v3 - 2 vCPUs, 8 GB RAM  (General Purpose)
+# Standard_D4s_v3 - 4 vCPUs, 16 GB RAM (General Purpose)
+# Standard_F2s_v2 - 2 vCPUs, 4 GB RAM  (Compute Optimized)
